@@ -1,0 +1,1040 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+    
+}
+
+
+
+
+
+    /* MENU */                              /*MENU  */
+.contenedor-menu{
+    max-width: 1285.8;
+}
+
+.imagenes{
+    width: 35px;
+    margin: 10px;
+}
+.container{
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "imagen"
+    "titulo-burguer"
+    "main" 
+    "titulo-starters" 
+    "starters"
+    "titulo-salsas"
+    "salsas"
+    "footer"
+    ;
+}
+.header-area{
+grid-area: header;   
+}
+.header-grid{
+    display: grid;
+    grid-template-columns: 1fr 3fr ;
+    justify-items: center;
+    align-items: center;  
+   height: 110px;
+   background-color: darkgoldenrod;
+   gap: 180px; 
+}
+.navbar{
+    position: relative;
+    right: 200px;
+   
+}
+.navbar ul{
+    display: flex;
+    list-style: none;
+   
+    color: white;    
+}
+.navbar ul li {
+    margin: 10px;  
+}
+.navbar ul li a{
+text-decoration: none;
+color: white;
+font-family: Arial, Helvetica, sans-serif
+}
+.navbar ul li a:hover{
+    color: black;
+}
+.titulo-area{
+    grid-area: titulo-burguer;
+}
+.titulo-burguer{
+    width: 100%;
+    height: 150px;
+    background-color: darkgoldenrod;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    color: white;
+    font-size: 24px;  
+}
+.starters-area h2{
+    color: black;
+}
+.salsas-area h2{
+    color: black;
+
+}
+.main-area{
+    grid-area: main;
+}
+
+.imagen-area{
+    grid-area: imagen;
+}
+.main-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    height: 700px;
+    margin: 60px;
+    gap: 30px;
+   
+}
+
+.starters-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    height: 700px;
+    margin: 60px;
+    gap: 30px;   
+}
+.titulo-starters-area{
+    grid-area: titulo-starters;
+    background-color: darkgoldenrod;
+    width: 100%;
+    height: 150px;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    color: white;
+    font-size: 24px;   
+}
+.starters-area{
+    grid-area: starters;
+   
+}
+
+.starters-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    height: 700px;
+    margin: 60px;
+    gap: 30px;   
+}
+.titulo-salsas-area{
+    grid-area: titulo-salsas;
+}
+.titulo-salsas{
+    background-color: darkgoldenrod;
+    width: 100%;
+    height: 150px;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    color: white;
+    font-size: 24px;
+}
+.salsas-area{
+    grid-area: salsas;
+}
+.salsas-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    height: 600px;
+    margin: 60px;
+    gap: 30px;
+}
+.footer-area{
+    grid-area: footer;
+
+}
+.footer-grid{
+   height: 120px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    justify-items: center;
+    align-items: center;
+    background-color: rgb(75, 74, 74);  
+}
+.imagen1{
+    height: 206px;
+    width: 250px;
+    border-radius: 30px;
+    box-shadow: 2px 4px 10px 0 black;  
+}
+.contenedor-imagen{
+    width: 100%;
+    height: 700px;
+    background-image: url(../GRID/inicio-fotos/fototakeaway.png)
+}
+
+h1{
+    color: white;
+    font-size:40px;   
+}
+h2{
+    text-align: center;
+    margin:5px;
+    color: white;
+    font-size: 30px;    
+}
+h3{
+    text-align: center;
+    color: darkgrey;
+}
+h4{
+    color: white;
+}
+h5{
+    color: white;
+    margin-top: 20px;
+    border: 1px solid white;
+    width: 150px;
+    text-align: center;
+    height: 18px;
+    background-color: darkgoldenrod;
+    color: black;
+}
+
+
+ /* INDEX*/                              /* INDEX */
+
+
+
+
+
+.foto1{
+    width: 100%;
+    height: 700px;
+    background-image: url(../GRID/inicio-fotos/fotoprincipal.png);
+}
+
+.foto2{
+    width: 100%;
+    height: 700px;
+    background-image: url(../GRID/inicio-fotos/fototakeaway.png);
+}
+
+
+
+.contenedor-index{
+    display: grid;
+   grid-template-areas: 
+    "header"
+    "fotos"
+    "donde-encontrarnos "
+    "direcciones "
+    "footer"
+    ;
+
+}
+.fotos-menu-grid-area{
+    grid-area: fotos;   
+}
+.donde.encontrarnos-area{
+    grid-area: donde-encontrarnos;   
+}
+.encontrarnos-grid{
+    height: 200px;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    margin: 20px;   
+}
+.direcciones-area{
+    grid-area: direcciones;
+}
+.direcciones-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+   height: 300px;
+   margin: 0px 150px 100px 150px;
+   gap: 30px;
+   position: relative;
+   bottom: 50px;
+  
+}
+.main-index{
+    background-color: black;
+    height: 500px;   
+}
+
+
+
+ /* FRANQUICIAS */                          /*FRANQUICIAS*/
+
+
+.contenedor-imagen-franquicias{
+    width: 100%;
+    height: 650px;
+    background-image: url(./inicio-fotos/franquicias.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.main-franquicias{
+    background-color: black;
+}
+.container{
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "ventajas"
+    "caracteristicas"
+    "formulario"
+    "footer"
+}
+.imagen-casita{
+    width: 250px;
+}
+
+.ventajas-area{
+    grid-area: ventajas;
+}
+.ventajas-grid{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    height: 350px;
+    align-items: center;
+    justify-items: center;
+}
+.texto-ventajas{
+    width:640px ;
+    text-align: center;
+}
+.caracteristicas-area{
+    grid-area: caracteristicas;
+}
+.caracteristicas-grid{
+display: grid;
+grid-template-columns: 1fr;
+align-items: center;
+justify-items: center;
+}
+.texto-caracteristicas{
+    width: 800px;
+}
+.formulario-area{
+    grid-area: formulario;
+}
+.formulario-grid{
+    display: grid;
+   grid-template-rows: 1fr 1fr 1fr 1fr;
+    justify-items: center;
+    gap: 10px;
+    margin: 60px;
+}
+.form-edit{
+    width: 400px;
+    height: 30px;
+    border-radius: 10px;
+  
+}
+.submit{
+    display: block;
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+
+
+
+
+
+ /* TRABAJA */                              /*TRABAJA */
+
+.contenedor-imagen-trabaja{
+    width: 100%;
+    height: 700px;
+    background-image: url(./inicio-fotos/trabaja.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container-trabaja{
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "imagen"
+    "formulario"
+    "footer"
+    ;
+  
+}
+.contenedor-imagen-grid{
+    grid-area: imagen;
+
+}
+.main-trabaja{
+    background-color: black;
+}
+
+.subtitulo-trabaja{
+    margin-top: 100px;
+}
+
+
+ /* CUPONES */                              /*CUPONES */
+.contenedor-imagen-cupones-grid{
+    background-image: url(./inicio-fotos/fototakeaway.png);
+    width: 100%;
+    height: 700px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.imagen-cupon{
+    width: 380px;
+    border-radius: 10px;  
+}
+.container-cupones{
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "imagen"
+    "titulo"
+    "cupones"
+    "footer"
+    ;
+}
+
+.contenedor-imagen-cupones-area{
+    grid-area: imagen;
+}
+.titulo-cupones-area{
+    grid-area: titulo;
+    display: grid;  
+}
+.titulo-cupones{
+width: 100%;
+height: 100px;
+background-color: darkgoldenrod;
+display: grid;
+align-items: center;
+justify-items: center;
+}
+.cupones-area-grid{
+    grid-area: cupones;
+    background-color: black;
+}
+.cupones-grid{
+    height: 700px;
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    align-items: center;
+    justify-items: center;
+    gap: 10px;
+    padding: 50px;
+}
+
+
+
+
+
+
+ /* MENU */                              /*MEDIA QUERI  */
+
+
+
+
+@media only screen and (max-width:768px){
+   
+    body{
+       overflow-x: hidden;
+    }
+    header{
+        width: 768px;
+    }
+    footer{
+        width:768px ;
+    }
+    .fotos-menu-grid-area{
+        width: 768px;
+    }
+   main{
+      width: 768px;
+   }
+    
+
+   .header-grid {
+       grid-template-columns: 1fr ;
+       gap: 0px;
+    
+    
+   }
+
+   .navbar{
+       position: relative;
+       left: 5px;
+   }
+
+
+
+
+.encontrarnos-grid{
+    
+    position: relative;
+    padding-left: 210px;
+  
+    
+    position: relative;
+    right: 100px;
+
+}
+    
+.direcciones-grid{
+   
+    grid-template-columns: 1fr 1fr ;
+    position: relative;
+    bottom: 10px;
+    
+    
+
+}
+
+.footer-grid{
+    grid-template-columns: 1fr;
+    padding: 20px;
+    height: 135px;
+}
+
+header{
+    width: 768px;
+}
+footer{
+    width:768px ;
+}
+.fotos-menu-grid-area{
+    width: 768px;
+}
+
+
+
+
+
+.main-index{
+    height: 630px;
+  
+}
+
+.starters-grid{
+    grid-template-columns: 1fr;
+    grid-template-rows: 6fr;
+    height: 1800px;
+    
+   
+}
+
+.salsas-grid{
+    grid-template-columns: 1fr;
+    grid-template-rows: 6fr;
+    height: 1800px;
+  
+}
+
+.ventajas-grid{
+    grid-template-columns: 1fr;
+    margin-bottom: 120px;
+    margin-top: 80px;
+}
+.imagen-casita{
+    width: 150px;
+    position: ;
+}
+.imagen-casa{
+    position: relative;
+    left: 15px;
+    margin: 5px;
+}
+.caracteristicas-grid h3{
+ width: 350px; 
+ position: relative;
+ left:220px; 
+ margin-top: 20px;
+ padding: 10px;
+
+ 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.cupones-grid{
+    height: 1200px;
+    grid-template-columns: 1fr;
+}
+
+}
+
+@media only screen and (max-width:650px){
+
+.navbar{
+    width: 500px;
+    position: relative;
+  
+
+}
+
+.logo-index{
+    position: relative;
+    right:50px;
+}
+
+.direcciones-grid{
+    right: 80px;
+}
+
+.encontrarnos-grid{
+    left: -200px;
+}
+
+h1{
+    font-size: 35px;
+}
+   
+.footer-grid{
+    position: relative;
+    right: 80px;
+}
+
+.texto-ventajas {
+    position: relative;
+    right: 60px;
+    margin: 0px;
+   
+    
+}
+
+.texto-ventajas h1{
+    font-size: 24px;
+    margin-bottom: 20px;
+    
+}
+.texto-ventajas h2{
+    font-size: 20px;
+    width: 350px;
+    text-align: center;
+    margin: auto;
+}
+.imagen-casita{
+    position: relative;
+    right: 65px;
+    top: 30px;
+}
+
+.texto-caracteristicas{
+    position: relative;
+    right: 65px;
+}
+.formulario-grid{
+    position: relative;
+    right: 50px;
+}
+
+.submit{
+    position: relative;
+    right: 60px;
+    bottom: 20px;
+}
+.completa-formulario{
+    position: relative;
+    right:70px;
+    top: 30px;
+}
+.subtitulo-trabaja{
+    position: relative;
+    right: 50px;
+    font-size: 20px;
+}
+.imagen-cupon{
+    width: 350px;
+    position: relative;
+    right: 70px;
+}
+
+.titulo-cupones h2{
+    position: relative;
+    right: 70px;
+}
+
+}
+
+@media only screen and (max-width:500px){
+    .navbar{
+        width: 100px;
+        position: relative;
+       left:-280px;
+    
+    }
+    
+    .logo-index{
+        position: relative;
+        right:150px;
+    }
+    
+    .direcciones-grid{
+
+        grid-template-columns: 1fr;
+        right: 140px;
+    }
+
+    .main-index{
+        height: 1000px;
+    }
+    
+    .encontrarnos-grid{
+        left: -240px;
+    }
+    
+    h1{
+        font-size: 30px;
+    }
+       
+    .footer-grid{
+        position: relative;
+        right: 150px;
+    }
+   
+    .texto-ventajas {
+        position: relative;
+        right: 140px;
+        margin: 0px;
+        width: 400px;
+      
+    }
+    
+    .texto-ventajas h1{
+        font-size: 24px;
+        margin-bottom: 20px;
+        
+
+        
+    }
+    .texto-ventajas h2{
+        font-size: 20px;
+        width: 350px;
+        text-align: center;
+        margin: auto;
+    }
+    .imagen-casita{
+        position: relative;
+        right: 150px;
+        top: 30px;
+    }
+    
+    .texto-caracteristicas{
+        position: relative;
+        right: 150px;
+    }
+    .formulario-grid{
+        position: relative;
+        right:  140px;
+    }
+    
+    .submit{
+        position: relative;
+        right: 140px;
+        bottom: 20px;
+    }
+    .completa-formulario{
+        width: 400px;
+        position: relative;
+        left: 45px;
+        top: 30px;
+    }
+    .subtitulo-trabaja{
+        width: 400px;
+        position: relative;
+        left: 40px;
+        font-size: 20px;
+    }
+    .imagen-cupon{
+        width: 300px;
+        position: relative;
+        right: 140px;
+    }
+    
+    .titulo-cupones h2{
+        position: relative;
+        right: 140px;
+    }
+
+    
+
+}
+
+
+@media only screen and (max-width:400px){
+    .navbar{
+        width: 100px;
+        position: relative;
+       left:-305px;
+       
+    
+    }
+
+    .navbar ul li{
+        margin: 5px;
+    }
+   
+    .logo-index{
+        position: relative;
+        right:205px;
+    }
+    
+    .direcciones-grid{
+
+        grid-template-columns: 1fr;
+        right: 210px;
+    }
+
+    .main-index{
+        height: 1000px;
+    }
+    
+    .encontrarnos-grid{
+        left: -310px;
+    }
+    
+    h1{
+        font-size: 23px;
+    }
+       
+    .footer-grid{
+        position: relative;
+        right: 210px;
+    }
+
+    .texto-ventajas {
+        position: relative;
+        right: 190px;
+        margin: 0px;
+        width: 370px;
+      
+    }
+    
+    .texto-ventajas h1{
+        font-size: 24px;
+        margin-bottom: 20px;
+        
+
+        
+    }
+    .texto-ventajas h2{
+        font-size: 20px;
+        width: 350px;
+        text-align: center;
+        margin: auto;
+    }
+    .imagen-casita{
+        position: relative;
+        right: 210px;
+        top: 30px;
+    }
+    
+    .texto-caracteristicas{
+        position: relative;
+        right: 205px;
+    }
+    .formulario-grid{
+        position: relative;
+        right: 195px;
+       
+    }
+    .form-edit{
+        width: 250px;
+    }
+    
+    .submit{
+        position: relative;
+        right: 200px;
+        bottom: 20px;
+    }
+    .completa-formulario{
+        width: 350px;
+        position: relative;
+        left: 15px;
+        top: 30px;
+    }
+    .subtitulo-trabaja{
+        width: 350px;
+        position: relative;
+        left: 15px;
+        font-size: 20px;
+    }
+    .imagen-cupon{
+        width: 250px;
+        position: relative;
+        right: 200px;
+    }
+    
+    .titulo-cupones h2{
+        position: relative;
+        right: 200px;
+    }
+
+
+
+
+
+
+
+
+}
+    
+    @media only screen and (max-width:360px){
+        .navbar{
+            width: 100px;
+            position: relative;
+           left:-325px;
+           
+        
+        }
+    
+        .navbar ul li{
+            margin: 5px;
+        }
+       
+        .logo-index{
+            position: relative;
+            right:215px;
+        }
+        
+        .direcciones-grid{
+    
+            grid-template-columns: 1fr;
+            right: 210px;
+        }
+    
+        .main-index{
+            height: 1000px;
+        }
+        
+        .encontrarnos-grid{
+            left: -310px;
+        }
+        
+        h1{
+            font-size: 23px;
+        }
+           
+        .footer-grid{
+            position: relative;
+            right: 210px;
+        }
+  
+  
+        .texto-ventajas {
+            position: relative;
+            right: 190px;
+            margin: 0px;
+            width: 370px;
+          
+        }
+        
+        .texto-ventajas h1{
+            font-size: 24px;
+            margin-bottom: 20px;
+            
+    
+            
+        }
+        .ventajas-grid{
+            display: none;
+        }
+        .texto-ventajas h2{
+            font-size: 20px;
+            width: 350px;
+            text-align: center;
+            margin: auto;
+        }
+        .imagen-casita{
+            position: relative;
+            right: 210px;
+            top: 30px;
+        }
+        
+        .texto-caracteristicas{
+            position: relative;
+            right: 225px;
+            margin-top: 30px;
+        }
+        .formulario-grid{
+            position: relative;
+            right: 215px;
+           
+        }
+        .form-edit{
+            width: 250px;
+        }
+        
+        .submit{
+            position: relative;
+            right: 215px;
+            bottom: 20px;
+        }
+        .completa-formulario{
+            width: 350px;
+            position: relative;
+            left: -10px;
+            top: 30px;
+        }
+        .subtitulo-trabaja{
+            width: 300px;
+            position: relative;
+            left: 15px;
+            font-size: 15px;
+            top: 15px;
+        }
+        .imagen-cupon{
+            width: 250px;
+            position: relative;
+            right: 215px;
+        }
+        
+        .titulo-cupones h2{
+            position: relative;
+            right: 205px;
+        }
+    
+  
+  
+  
+  
+  
+  
+    }
+
+
+    
